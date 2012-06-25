@@ -1,0 +1,247 @@
+/* Body */
+
+body
+{
+	width  : 100%;
+	height : 100%;
+	
+	margin  : 0;
+	padding : 0;
+	
+	overflow : hidden;
+}
+
+/* Toolbar */
+
+section#toolbar
+{
+	position : absolute;
+	
+	top     : 0;
+	left    : 0;
+	z-index : 1;
+	
+	width  : 100%;
+	height : 50px;
+	
+	margin  : 0;
+	padding : 0;
+	
+	border-bottom : solid medium #446;
+	
+	text-align : center;
+	
+	background : #335;
+	box-shadow : 0 0 30px 10px #111;
+}
+
+button
+{
+	padding : 7px 30px;
+	margin  : 10px 0;
+	
+	border        : none;
+	border-radius : 2px;
+	
+	color       : #fff;
+	text-align  : center;
+	font-weight : bold;
+	font-size   : 13px;  
+	
+	background : #f55;
+}
+
+button:hover
+{
+	background : #e44;
+	
+	cursor : pointer;
+}
+
+button:active
+{
+	background : #d33;
+}
+
+div#app
+{
+	position : absolute;
+	
+	top   : 5px;
+	right : 50px;
+	
+	width  : 240px;
+	height : 40px;
+	
+	background : url(../resource/texture/app.png);	
+}
+
+/* Area */
+
+section#area
+{
+	position : absolute;
+	
+	top  : 0;
+	left : 0;
+	
+	width  : 100%;
+	height : 100%;
+	
+	z-index : 0;
+	
+	padding : 0;
+	margin  : 0;
+	
+	background : #aaa;
+}
+
+canvas#areaCanvas
+{
+	position : absolute;
+	
+	top  : 50%;
+	left : 50%;
+	
+	width  : 854px;
+	height : 480px;
+	
+	margin-left : -427px;
+	margin-top  : -215px;
+	
+	border-radius : 10px;
+	
+	background : #bbb;
+}
+
+/* Settings */
+
+section#settings
+{
+	position : absolute;
+	
+	z-index : 1;
+	
+	height : 480px;
+	width  : 240px;
+	
+	top  : 50%;
+	left : 100%;
+	
+	margin-top : -215px;
+	
+	border-radius  : 5px;
+	
+	text-align : center;
+	color      : #999;
+	
+	background : #ccc;
+}
+
+section#settings input
+{	
+	width : 75%;	
+}
+
+section#settings:hover
+{
+	margin-left : -240px;
+}
+
+section#settings .float
+{
+	display  : block;
+	position : relative;
+	
+	top   : 180px;
+	right : 90px;
+	
+	width : 150px;
+	
+	border-top-left-radius  : 5px;
+	border-top-right-radius : 5px;
+	
+	text-align : center;
+	
+	-webkit-transform : rotate(-90deg);
+	   -moz-transform : rotate(-90deg);
+	        transform : rotate(-90deg);
+	        
+	background : #ccc;
+}
+
+/* About */
+
+section#about
+{
+	position : absolute;
+	
+	z-index : 1;
+	
+	height : 480px;
+	width  : 240px;
+	
+	top  : 50%;
+	left : -240px;
+	
+	margin-top : -215px;
+	
+	border-radius  : 5px;
+	
+	text-align : center;
+	color      : #999;
+	
+	background : #ccc;
+}
+
+section#about input
+{	
+	width : 75%;	
+}
+
+section#about:hover
+{
+	margin-left : 240px;
+}
+
+section#about .float
+{
+	display  : block;
+	position : relative;
+	
+	top  : 180px;
+	left : 190px;
+	
+	width : 120px;
+	
+	border-top-left-radius  : 5px;
+	border-top-right-radius : 5px;
+	
+	text-align : center;
+	
+	-webkit-transform : rotate(90deg);
+	   -moz-transform : rotate(90deg);
+	        transform : rotate(-90deg);
+	        
+	background : #ccc;
+}
+
+section#about p
+{
+	font-weight : bold;
+	
+	font-size : 10px;
+}
+
+div#logo
+{
+	position : relative;
+	
+	width  : 128px;
+	height : 128px;
+	
+	margin : 20px auto;
+	
+	background : url(../resource/texture/logo.png);
+	background-size : 100%;	
+}

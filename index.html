@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Lifee</title>
+	<meta charset = "utf-8">
+	
+	<link href = "style/interface.css" rel = "stylesheet"/>
+
+	<!-- Atomjs -->
+	<script src = "lib/atomjs/overall.js">
+	</script>
+	<script src = "lib/atomjs/Js185.js">
+	</script>
+	<script src = "lib/atomjs/Core.js">
+	</script>
+	<script src = "lib/atomjs/Accessors.js">
+	</script>
+	<script src = "lib/atomjs/Dom.js">
+	</script>
+	
+	<script src = "compiled/utils.js">
+	</script>
+	
+	<script src = "compiled/Interface.js">
+	</script>
+	<script src = "compiled/Cell.js">
+	</script>
+	<script src = "compiled/FieldManager.js">
+	</script>
+	<script src = "compiled/GraphicManager.js">
+	</script>
+	<script src = "compiled/Controller.js">
+	</script>
+	<script src = "compiled/Application.js">
+	</script>
+</head>
+
+<body>
+	
+	<section id = "toolbar">
+		<button id = "clear">CLEAR</button>
+		<button id = "start">START</button>
+		<button id = "pause">PAUSE</button>
+		
+		<div id = "app">
+		</div>
+	</section>
+	
+	<section id = "settings">
+		<h1 class = "float">SETTINGS</h1>
+		
+		<h2>Frequency</h2>
+		<input type = "range" min="10" max="60" step="5" id = "frequency"/>
+		
+		<button id = "apply">APPLY</button>
+	</section>
+	
+	<section id = "about">
+		<h1 class = "float">ABOUT</h1>
+		
+		<p>Created by Bob Garfield</p>
+		<p>bobbyGarfieldPeace@gmail.com</p>
+		
+		<div id = "logo">
+		</div>
+	</section>
+	
+	<section id = "area">
+		<canvas id = "areaCanvas" width = "854" height = "480">
+		</canvas>
+	</section>
+		
+</body>
+
+<script>
+	new Application
+</script>
